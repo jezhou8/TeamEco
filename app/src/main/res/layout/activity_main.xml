@@ -25,5 +25,5 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="59dp"
         android:id="@+id/button"
-        android:onClick="sendNotification (MainActivity)" />
+        android:onClick="sendNotification" />
 </RelativeLayout>
