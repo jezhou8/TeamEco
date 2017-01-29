@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
     tools:context="org.d125.jezhou8.turnmeon.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/start_screen"
+        android:id="@+id/imageView2" />
 
     <Button
-        android:text="Notify"
-        android:layout_width="wrap_content"
+        android:layout_width="420dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="59dp"
-        android:id="@+id/button"
-        android:onClick="sendNotification" />
+        android:id="@+id/loginGoogle"
+        android:layout_marginBottom="391dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginFacebook"
+        android:layout_alignTop="@+id/loginGoogle"
+        android:layout_alignStart="@+id/loginGoogle"
+        android:layout_marginTop="158dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginEmail"
+        android:layout_marginBottom="75dp"
+        android:layout_alignBottom="@+id/loginFacebook"
+        android:layout_alignStart="@+id/loginFacebook"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"/>
+
 </RelativeLayout>
