@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setSmallIcon(R.drawable.icon)
                         .setContentTitle("My notification")
                         .setContentText("Hello World!");
 
