@@ -13,11 +13,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.startup_layout);
     }
 
     public void onClick(View view){
-        setContentView(R.layout.mainlayout);
+        if(view.getId() == R.id.returnToHome)
+            setContentView(R.layout.startup_layout);
+        else
+            setContentView(R.layout.main_layout);
     }
 
     public void sendNotification(View view) {
@@ -27,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.icon)
-                        .setContentTitle("My notification")
-                        .setContentText("Hello World!");
+                        .setContentTitle("Reduce Energy Consumption")
+                        .setContentText("Don't forget to turn off unnecessary power draw!");
 
 
 // Gets an instance of the NotificationManager service//
