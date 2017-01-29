@@ -29,4 +29,14 @@
         android:layout_below="@+id/returnToHome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="95dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/printDevic"
+        android:onClick="printDevices"
+        android:layout_marginEnd="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp" />
 </RelativeLayout>
